@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>anoare</title>
+
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+	<div id="gameContainer">
+		<div id="mainMenu" class="page">
+			<div id="startButtonContainer">
+				<button id="startButton">ゲームを開始する</button>
+			</div>
+		</div>
+		<div id="setting" class="page">
+			<div class="title">
+				<span class="titleString">設定</span>
+			</div>
+			<div id="setting1" class="subPage">
+				<div id="playerNumberContainer">
+					<div>プレイ人数</div>
+					<div id="playerNumberController"><span class="down">◀</span><span id="playerNumber">3</span><span class="up">▶</span></div>
+				</div>
+				<div id="playerNameInputContainer">
+					<div id="playerNameInputList">
+					</div>
+				</div>
+				<div class="subBox">
+					<button id="setting1NextButton">次の設定へ</button>
+				</div>
+			</div>
+			<div id="setting2" class="subPage">
+				<div class="mainBox">
+					<div id="timerSettingContainer">
+						<div>解答時間</div>
+						<div id="timerController"><span class="down">◀</span><span id="time" class="controllerValue">2分</span><span class="up">▶</span></div>
+					</div>
+					<div id="gameNumberContainer">
+						<div>周回数</div>
+						<div id="gameNumberController"><span class="down">◀</span><span id="gameNumber" class="controllerValue">1周</span><span class="up">▶</span></div>
+					</div>
+				</div>
+				<div class="subBox">
+					<button id="setting2NextButton">お題を表示する</button>
+				</div>
+			</div>
+		</div>
+		<div id="theme" class="page">
+			<div class="title">
+				<span class="titleString">お題</span>
+			</div>
+			<div id="theme1" class="subPage">
+				<div class="mainBox">
+					<div id="checkMessage"></div>
+				</div>
+				<div class="subBox"><button id="yesButton">はい</button></div>
+			</div>
+			<div id="theme2" class="subPage">
+				<div id="timerContainer">
+					<div>残り</div>
+					<div id="timer"></div>
+				</div>
+				<div id="themeContainer">
+					<div id="themeMessageBox">
+						<div id="themeStringContainer">
+							<div id="themeString"></div>
+						</div>
+						<div id="themeMessasge"></div>
+					</div>
+				</div>
+				<div id="themeButtonInnerPage" class="themeInnerPage">
+					<div id="themeButtonContainer">
+						<button id="choosePerson">正解者を選ぶ</button>
+					</div>
+					<div id="themeButtonContainer">
+						<button id="wrongAnswer">全員が不正解</button>
+					</div>
+					<div id="themeButtonContainer">
+						<button id="kanakana">カタカナ指摘された</button>
+					</div>
+				</div>
+				<div id="correntAnswerInnerPage" class="themeInnerPage">
+					<div class="boxContainer">
+						<div class="leftBox">
+							<div class="messageBox">
+								<div>正解者を選んでください。</div>
+							</div>
+							<div class="cancelButtonContainer">
+								<button class="cancelButton">取り消す</button>
+							</div>
+						</div>
+						<div class="rightBox">
+							<div class="playerNameList">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="wrongAnswerInnerPage" class="themeInnerPage">
+					<div class="mainBox">
+						<div class="messageBox">
+							<div>全員が不正解だったのでお題を選び直します。</div>
+						</div>
+					</div>
+					<div class="subBox">
+						<button class="cancelButton">取り消す</button>
+						<button id="reselectTheme">はい</button>
+					</div>
+				</div>
+				<div id="katakanaInnerPage" class="themeInnerPage">
+					<div class="boxContainer">
+						<div class="leftBox">
+							<div class="messageBox">
+								<div>カタカナを指摘したプレイヤーを選んでください。</div>
+							</div>
+							<div class="cancelButtonContainer">
+								<button class="cancelButton">取り消す</button>
+							</div>
+						</div>
+						<div class="rightBox">
+							<div class="playerNameList">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="result" class="page">
+			<div class="title">
+				<span class="titleString">結果発表</span>
+			</div>
+			<div id="rankingContainer">
+				<div id="ranking">
+				</div>
+			</div>
+			<div id="nextGameButtonContainer">
+				<button id="nextGameButton">次のゲームへ</button>
+			</div>
+		</div>
+	</div>
+
+	<script type="module" src="/index.js"></script>
+</body>
+
+</html>
